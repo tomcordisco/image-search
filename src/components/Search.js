@@ -18,7 +18,8 @@ class Search extends Component {
 
     render() {
         return ( //El usuario realiza una busqueda (se obtienen lo datos)
-            <form onSubmit={this.handleData}>
+            <div className="d-flex justify-content-center">
+                <form onSubmit={this.handleData}>
                 <div className="row">
                     <div className="form-group col-md-8">
                         <input ref={this.searchRef} type="text" className="form-control form-control-lg"
@@ -30,6 +31,7 @@ class Search extends Component {
                     </div>
                 </div>
             </form>
+            </div>
         ); 
     }
 }
